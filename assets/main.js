@@ -41,7 +41,7 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
    * @param {File} file
    */
   function updateThumbnail(dropZoneElement, file) {
-    
+    document.querySelector('.file_modal_wrapper').classList.remove('hidden');
     let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
   
     // First time - remove the prompt
@@ -64,7 +64,6 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
       reader.readAsDataURL(file);
       reader.onload = () => {
         thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
-        document.querySelector('.file_modal_wrapper').classList.remove('hidden');
       };
 
     } else {
