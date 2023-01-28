@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>GeniusTeam</title>
+</head>
+<body>
+    <div class="decor-circle" style="width:120px;height:120px;top: 40px;right: 362px;filter: blur(130px);opacity: 0.9;"></div>
+    <div class="decor-circle" style="width:120px;height:120px;top: 150px;right: 62px;background-color: rgb(152, 0, 253);filter: blur(130px);opacity: 0.9;"></div>
+    <div class="decor-circle" style="width:120px;height:120px;bottom: 40px;left: 262px;filter: blur(90px);opacity: 0.7;"></div>
+    <div class="decor-circle" style="width:120px;height:120px;bottom: 150px;left: 62px;background-color: rgb(152, 0, 253);filter: blur(90px);opacity: 0.7;"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="" class="logo">
+                    Logo
+                </a>
+                <a href="" class="main-btn">Начать</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="file_modal_wrapper hidden">
+            <div class="file-load modal">
+                <a class="modal_close">X</a>
+                <div class="modal__image">
+                    <img src="assets/img\/file-svgrepo-com.svg" alt="">
+                </div>
+                <div class="file__content">
+                    <div class="fields">
+                        <input type="text" class="form__field file__name" placeholder="Имя файла">
+                        <div>
+                            <input id="is_code" type="checkbox" >
+                            <label for="is_code">Файл с кодом</label>
+                        </div>
+                        <div>
+                            <input id="is_privat" type="checkbox">
+                            <label for="is_privat">Приватный</label>
+                        </div>
+                        <a href="" class="main-btn draganddrop__files__btn">Загрузить</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="draganddrop drop-zone">
+                <input type="file" name="" id="" class="drop-zone__input">
+                <h1 class="dradanddrop__title">Перетащите файлы или папки</h1>
+                
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
+    <script src="assets/main.js"></script>
+</body>
+</html>
