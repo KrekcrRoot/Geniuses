@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Harry';
+    src: url(font/Heuristica-Regular_0.otf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +24,9 @@ body {
 }
 .header {
     width: 100%;
-    position: fixed;
+    padding: 10px;
+    background-color: #fff;
+    /* position: fixed; */
 }
 .header__content {
     width: 100%;
@@ -74,6 +80,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .draganddrop {
     position: relative;
@@ -388,4 +395,21 @@ a.profile-blocks__item {
   }
   .hidden {
     display: none;
+  }
+  .profile-blocks__main-title {
+    font-size: 64px;
+    color: rgb(27, 24, 39);
+  }
+  .profile-blocks__main-postitle {
+    font-size: 34px;
+  }
+  .logo {
+    text-decoration: none;
+    color: #262733;
+    font-size: 40px;
+    font-family: 'Harry', sans-serif;
+  }
+  .area__file {
+    border: 2px solid rgb(57, 6, 238);
+    padding: 20px;
   }
