@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="lib/codemirror.js"></script>
+    <link rel="stylesheet" href="../lib/codemirror.css">
+    <script src="mode/javascript/javascript.js"></script>
     <title>GeniusTeam</title>
 </head>
 <body>
@@ -25,16 +28,19 @@
             <div class="decor-circle" style="width:180px;height:180px;top: 58%;right: 93%;filter: blur(90px);"></div>
             <div class="decor-circle" style="width:280px;height:280px;top: 18px;right: -100px;filter: blur(190px);background-color: rgb(152, 0, 253);opacity: 0.9;"></div>
             <form action="">
-                <h1>Регистрация</h1>
+                <h1>Редактировать файл</h1>
                 <div class="fields">
-                    <input type="text" class="form__field" placeholder="Фамилия">
-                    <input type="text" class="form__field" placeholder="Имя">
-                    <input type="text" class="form__field" placeholder="Логин">
-                    <input type="text" class="form__field" placeholder="E-mail">
-                    <input type="text" class="form__field" placeholder="Пароль">
-                    <input type="text" class="form__field" placeholder="Подтвердите пароль">
-                    <a href="" class="profile-blocks__link" style="margin-left: 0;">Вход</a>
-                    <button class="main-btn fortm__btn" type="submit">Зарегистрироваться</button>
+                    <input type="text" class="form__field file__name" placeholder="Имя файла">
+                    <div>
+                        <input id="is_code" type="checkbox" >
+                        <label for="is_code">Файл с кодом</label>
+                    </div>
+                    <div>
+                        <input id="is_privat" type="checkbox">
+                        <label for="is_privat">Приватный</label>
+                    </div>
+                    <textarea class="area__file" name="" id="" cols="30" rows="10"></textarea>
+                    <button class="main-btn fortm__btn" type="submit">Сохранить</button>
                 </div>
             </form>
            </div>
